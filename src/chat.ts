@@ -37,7 +37,8 @@ export async function notify(name: string, url: string, status: Status) {
           widgets: [{
             textParagraph: {
               text: `<b>${name} <font color="${statusColorPalette[status]}">${statusText[status]}</font></b>`
-            }
+              },
+              "image": "https://github.githubassets.com/images/modules/logos_page/Octocat.png"
           }]
         },
         {
